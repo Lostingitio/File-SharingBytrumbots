@@ -37,7 +37,18 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.
+
+\n 𝐘𝐨𝐮𝐫 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 👇
+╭━━━━━━━━━━━━━━━➣
+┣⪼ 𝐅𝐢𝐫𝐬𝐭 𝐍𝐚𝐦𝐞 [ {first} ]
+┣⪼ 𝐋𝐚𝐬𝐭 𝐍𝐚𝐦𝐞 [ {last} ]
+┣⪼ 𝐓𝐆 𝐈𝐃 [ {id} ]
+┣⪼ 𝐔𝐬𝐞𝐫 𝐍𝐚𝐦𝐞 [ {mention} ]
+╰━━━━━━━━━━━━━━━➣
+
+
+")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
