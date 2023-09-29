@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>FLIGHER</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Channel : @movie_time_botonly\n○ Support Group : @TRUMBOTCHAT</b>",
+            text = f"<b>○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a></b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
@@ -18,7 +18,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                         InlineKeyboardButton("🔒 Close", callback_data = "close")
                     ],
                     [
-                        InlineKeyboardButton("🌖 SOURCE CODE ",url="https://files.technicalatg.com/MKSmm2")
+                        InlineKeyboardButton("🌖 CODE BY ",url="https://t.me/fligher")
                     ]
                 ]
             )
