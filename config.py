@@ -41,10 +41,10 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.🚫")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝑯𝒆𝒍𝒍𝒐 {𝒇𝒊𝒓𝒔𝒕}\n\n𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒋𝒐𝒊𝒏 𝒊𝒏 𝒎𝒚 𝑪𝒉𝒂𝒏𝒏𝒆𝒍/𝑮𝒓𝒐𝒖𝒑 𝒕𝒐 𝒖𝒔𝒆 𝒎𝒆\n\n𝑲𝒊𝒏𝒅𝒍𝒚 𝑷𝒍𝒆𝒂𝒔𝒆 𝒋𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝑯𝒆𝒍𝒍𝒐 {first}\n\n𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒋𝒐𝒊𝒏 𝒊𝒏 𝒎𝒚 𝑪𝒉𝒂𝒏𝒏𝒆𝒍/𝑮𝒓𝒐𝒖𝒑 𝒕𝒐 𝒖𝒔𝒆 𝒎𝒆\n\n𝑲𝒊𝒏𝒅𝒍𝒚 𝑷𝒍𝒆𝒂𝒔𝒆 𝒋𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", ",FILE REQUEST BY {first}✨")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
